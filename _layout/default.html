@@ -4,6 +4,12 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			 <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
 		</head>
 		<body>
 			<nav>
@@ -19,6 +25,39 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
+			 <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var zagreb = {lat: 45.835283, lng: 15.98164};
+        var zadar = {lat: 44.119371, lng: 15.2313647};
+        var split = {lat: 43.5081323, lng: 16.4401934999};
+        var kotor = {lat: 42.424662, lng: 18.771234000};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: zagreb
+        });
+        var marker = new google.maps.Marker({
+          position: zagreb,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: zadar,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: split,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: kotor,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACynrRng0a2GrO18sZGV2FEzSWC8vuyp0&callback=initMap">
+    </script>
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
