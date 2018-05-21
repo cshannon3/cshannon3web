@@ -1,0 +1,2 @@
+webpackJsonp([68702295771104],{426:function(t,a){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/introducing-gatsby-material-starter"},excerpt:"I'm making a blog",timeToRead:1,frontmatter:{title:"Introducing Gatsby Material Starter",tags:["introduction","general"],cover:"/logos/logo-1024.png",date:"21/05/2018"}}}]}},pathContext:{category:"general"}}}});
+//# sourceMappingURL=path---categories-general-d212d04c35240c6b12c1.js.map
